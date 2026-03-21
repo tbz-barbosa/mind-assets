@@ -1,0 +1,136 @@
+# README-BRANDING
+
+## Sobre esta pasta
+
+A pasta `branding` centraliza os assets de identidade visual do ecossistema MIND.
+
+O objetivo dela é reunir, em um único lugar, os arquivos que representam a linguagem visual do setor, como logos, assinaturas, selos, marcas auxiliares e peças animadas ou vetoriais que poderão ser reutilizadas em aplicações, catálogos e bibliotecas internas.
+
+Esta organização existe para facilitar três frentes ao mesmo tempo:
+
+- consulta humana rápida no GitHub
+- leitura programática via JavaScript
+- crescimento ordenado da biblioteca visual do setor
+
+---
+
+## Regra de organização
+
+Todos os arquivos desta pasta devem seguir o padrão:
+
+`[numero] - [tipo] - [id].[extensao]`
+
+### Estrutura
+
+#### 1. Número
+É o índice sequencial do asset dentro da biblioteca.
+
+Exemplos:
+- `001`
+- `002`
+- `003`
+
+> Recomendação: usar sempre **3 dígitos** para manter a ordenação visual correta no GitHub e facilitar sorter no catálogo.
+
+#### 2. Tipo
+É a família principal ou o grupo visual ao qual o asset pertence.
+
+Exemplos:
+- `MIND`
+- `ML`
+- `APOLLO`
+
+#### 3. ID
+É o identificador específico da peça.
+
+Esse bloco deve descrever de forma objetiva qual é o asset, sua função ou sua variação.
+
+Padrão recomendado:
+- usar letras maiúsculas
+- usar `_` no lugar de espaços
+- evitar acentos
+- evitar nomes vagos como `TESTE`, `NOVO`, `FINAL`, `VERSAO_2`
+
+Exemplos:
+- `LOGO_AZUL`
+- `LOGO_PADRAO`
+- `ASSINATURA_HEADER`
+- `SELO_HORIZONTAL`
+- `LOADER_ORBITAL`
+
+---
+
+## Exemplos práticos
+
+- `001 - MIND - LOGO_AZUL.svg`
+- `002 - ML - LOGO_PADRAO.svg`
+- `003 - MIND - ASSINATURA_HEADER.svg`
+- `004 - APOLLO - LOADER_ORBITAL.json`
+
+---
+
+## Extensões esperadas
+
+A pasta pode receber diferentes tipos de arquivo, desde que façam parte da biblioteca de branding.
+
+### SVG
+Usado para peças vetoriais estáticas.
+
+Exemplos:
+- logos
+- selos
+- assinaturas
+- marcas auxiliares
+
+### JSON
+Usado para peças animadas em formato Lottie.
+
+Exemplos:
+- loaders
+- assinaturas animadas
+- microinterações de branding
+
+### PNG
+Usado apenas quando necessário como fallback, export ou apoio visual.
+
+---
+
+## Objetivo dessa padronização
+
+Esse padrão de nomenclatura foi definido para permitir que o catálogo consiga, no futuro, interpretar automaticamente cada arquivo a partir do próprio nome.
+
+Com isso, o JavaScript poderá separar:
+
+- número
+- tipo
+- identificador
+- extensão
+
+Isso abre espaço para recursos como:
+
+- sorter por número
+- filtros por tipo
+- agrupamento por família visual
+- leitura automática de bibliotecas
+- exibição dinâmica em catálogos internos
+
+---
+
+## Regras de manutenção
+
+- Se o asset continuar sendo o mesmo, o ideal é manter o mesmo arquivo e apenas atualizar seu conteúdo.
+- Se for uma nova variação real, criar um novo número.
+- Não usar nomes genéricos ou temporários no arquivo final.
+- Evitar acentos no nome do arquivo.
+- Manter o campo `tipo` consistente para que os filtros funcionem corretamente no futuro.
+- Manter o campo `id` o mais descritivo e objetivo possível.
+
+---
+
+## Resumo
+
+A pasta `branding` não é apenas uma coleção de arquivos.
+
+Ela é a base da biblioteca visual do setor.
+
+Quanto mais previsível for a nomenclatura, mais fácil será transformar esses assets em catálogo, documentação, filtros automáticos e componentes reutilizáveis dentro do ecossistema MIND.
